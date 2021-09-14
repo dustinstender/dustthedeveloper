@@ -1,1 +1,27 @@
 // Specific CSS for your home-page
+.rick {
+  height: 500px;
+}
+
+.title {
+  color: black;
+}
+
+.banner {
+  background-image: linear-gradient(105deg, #F4F4F4 75%, #22313F calc(75% + 2px));
+  height: 100vh;
+}
+
+.left-banner {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  height: 70vh;
+}
+
+.right-banner {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  height: 100vh;
+}
