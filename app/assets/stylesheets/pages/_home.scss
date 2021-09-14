@@ -1,7 +1,21 @@
 // Specific CSS for your home-page
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.gstatic.com');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300&display=swap');
+
 .rick {
   height: 500px;
 }
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 60px;
+}
+
+p {
+  font-family: 'Poppins', Sans-Serif;
+  font-size: 16px;
+}
+
 
 .title {
   color: black;
