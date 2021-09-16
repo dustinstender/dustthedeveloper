@@ -31,6 +31,7 @@ p {
   align-items:center;
   justify-content:center;
   height: 70vh;
+  padding-left: 100px;
 }
 
 .right-banner {
@@ -41,8 +42,28 @@ p {
 }
 
 .skill-ball {
-  height: 160px;
   width: 160px;
+  height: 160px;
   border-radius: 50%;
-  background-color: red;
+  position: absolute;
+  transform-origin: center;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.ball-1 {
+
+}
+
+.ball-2 {
+  left: 20%;
+  top: 15%;
+}
+
+ul {
+  height: 530px;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
