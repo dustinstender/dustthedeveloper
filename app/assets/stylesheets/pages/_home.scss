@@ -47,30 +47,37 @@ p {
   border-radius: 50%;
   position: absolute;
   transform-origin: center;
-  background-color: #fff;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   justify-content:center;
   align-items:center;
 }
 
-// .center-ball {
-//   display: flex;
-//   justify-content:center;
-//   align-items:center;
-// }
-
 .heroku-pic {
-  width: 100px;
+  width: 180px;
+}
+
+.rails-pic {
+  width: 110px;
+}
+
+.css-pic {
+  width: 100%;
 }
 
 .ball-1 {
-
+  background-color: #fff;
 }
 
 .ball-2 {
   left: 20%;
   top: 15%;
+  background-color: #CC0202;
+}
+
+.ball-3 {
+  left: 40%;
+  top: 7%;
 }
 
 ul {
