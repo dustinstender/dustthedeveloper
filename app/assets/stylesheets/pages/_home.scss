@@ -16,7 +16,6 @@ p {
   font-size: 16px;
 }
 
-
 .title {
   color: black;
 }
@@ -54,7 +53,7 @@ p {
 }
 
 .heroku-pic {
-  width: 180px;
+  width: 190px;
 }
 
 .rails-pic {
@@ -63,6 +62,14 @@ p {
 
 .css-pic {
   width: 100%;
+}
+
+.html-pic {
+  width: 100%;
+}
+
+.java-pic {
+  width: 110px;
 }
 
 .ball-1 {
@@ -78,6 +85,18 @@ p {
 .ball-3 {
   left: 40%;
   top: 7%;
+  background-color: #389AD6;
+}
+
+.ball-4 {
+  left: 60%;
+  top: 45%;
+  background-color: #E44E26;
+}
+
+.ball-5 {
+  left: 5%;
+  top: 40%;
 }
 
 ul {
