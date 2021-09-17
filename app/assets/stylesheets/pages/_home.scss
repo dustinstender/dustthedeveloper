@@ -72,6 +72,15 @@ p {
   width: 110px;
 }
 
+.ruby-pic {
+  width: 160px;
+}
+
+.boot-pic {
+  width: 160px;
+  border-radius: 50%;
+}
+
 .ball-1 {
   background-color: #fff;
 }
@@ -97,6 +106,21 @@ p {
 .ball-5 {
   left: 5%;
   top: 40%;
+}
+
+.ball-6 {
+  left: 30%;
+  top: 42%;
+  background-color: #FCD2A2;
+}
+
+.ball-7 {
+  top: 80%;
+  background-color: #563C7D;
+}
+
+.skill-container {
+  padding-top: 70px;
 }
 
 ul {
