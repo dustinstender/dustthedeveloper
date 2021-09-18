@@ -83,6 +83,7 @@ p {
 
 .ball-1 {
   background-color: #fff;
+  left: 80%;
 }
 
 .ball-2 {
@@ -129,4 +130,13 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
 }

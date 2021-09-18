@@ -21,10 +21,37 @@ ActiveStorage.start()
 // External imports
 import "bootstrap";
 
+
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+// import { fadeIn } from "../plugins/fade_stuff";
+function fadeIn() {
+  const faders = document.querySelectorAll(".fade-in");
+  const appearOptions = {
+    threshold: 1,
+    rootMargin: "0px 0px -75px 0px"
+  };
+  const appearOnScroll = new IntersectionObserver(function (
+    entries,
+    appearOnScroll
+  ) {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      } else {
+        entry.target.classList.add("appear");
+        appearOnScroll.unobserve(entry.target);
+      }
+    });
+  },
+  appearOptions);
+  faders.forEach((fader) => {
+    appearOnScroll.observe(fader);
+  });
+}
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  fadeIn();
 });
