@@ -24,7 +24,6 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
-// import { fadeIn } from "../plugins/fade_stuff";
 function fadeIn() {
   const faders = document.querySelectorAll(".fade-in");
   const appearOptions = {
