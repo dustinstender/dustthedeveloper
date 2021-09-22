@@ -2,14 +2,15 @@
 span{
   position: relative;
   display: inline-flex;
-  width: 150px;
-  height: 45px;
+  width: 180px;
+  height: 55px;
   margin: 0 15px;
   perspective: 1000px;
+  padding-top: 15px;
 }
 
 span .contact-btn{
-  font-size: 16px;
+  font-size: 19px;
   letter-spacing: 1px;
   transform-style: preserve-3d;
   transform: translateZ(-25px);
@@ -20,8 +21,8 @@ span .contact-btn:before,
 span .contact-btn:after{
   position: absolute;
   content: "Contact";
-  height: 45px;
-  width: 150px;
+  height: 55px;
+  width: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
