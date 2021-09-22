@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+span{
+  position: relative;
+  display: inline-flex;
+  width: 150px;
+  height: 45px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+
+span .contact-btn{
+  font-size: 16px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+}
+span .contact-btn:before,
+span .contact-btn:after{
+  position: absolute;
+  content: "Contact";
+  height: 45px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+span .contact-btn:before{
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span .contact-btn:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span .contact-btn:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.profiler-result {
+  display: none;
+}

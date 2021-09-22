@@ -8,6 +8,7 @@
 .rick {
   height: 500px;
 }
+
 h1 {
   font-family: 'Abril Fatface', cursive;
   font-size: 60px;
@@ -148,17 +149,4 @@ p {
 .title-skill {
   text-align: center;
   padding-top: 60px
-}
-
-.btn-flat {
-  color: white;
-  padding: 8px 24px;
-  border-radius: 4px;
-  background-color: #1EDD88;
-  transition: background 0.3s ease;
-}
-
-.btn-flat:hover {
-  background-color: red;
-  color: white;
 }
