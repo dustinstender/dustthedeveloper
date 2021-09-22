@@ -24,6 +24,9 @@ import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+
+
+// fade in skills //
 function fadeIn() {
   const faders = document.querySelectorAll(".fade-in");
   const appearOptions = {
