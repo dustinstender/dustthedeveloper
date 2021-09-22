@@ -1,7 +1,9 @@
 // Specific CSS for your home-page
-@import url('https://fonts.googleapis.com');
-@import url('https://fonts.gstatic.com');
+// @import url('https://fonts.googleapis.com');
+// @import url('https://fonts.gstatic.com');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 
 .rick {
   height: 500px;
@@ -146,4 +148,17 @@ ul {
 .title-skill {
   text-align: center;
   padding-top: 60px
+}
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #1EDD88;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: red;
+  color: white;
 }
