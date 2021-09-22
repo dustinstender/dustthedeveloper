@@ -1,3 +1,84 @@
-.navbar {
-  background: none;
+nav {
+  &.primary-navigation {
+    margin: 0 auto;
+    display: block;
+    padding: 10px 0 0 0;
+    text-align: center;
+    font-size: 16px;
+    background: none;
+
+    .nav-bar-list li {
+      list-style: none;
+      margin: 0 auto;
+      display: inline-block;
+      padding: 0 30px;
+      position: relative;
+      text-decoration: none;
+      text-align: center;
+      font-family: 'Poppins', Sans-Serif;
+    }
+
+    .li-w-line {
+      border-left: 2px solid #22313F;
+    }
+
+    li a {
+      color: black;
+    }
+
+    li a:hover {
+      color: #22313F;
+    }
+
+    li:hover {
+      cursor: pointer;
+    }
+
+    .nav-bar-list li ul {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      padding-left: 0;
+      left: 0;
+      display: none;
+      background: white;
+    }
+
+    .nav-bar-list li:hover > .nav-bar-list,
+    .nav-bar-list li .nav-bar-list:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+      min-width: 250px;
+      text-align: left;
+      padding-top: 20px;
+      box-shadow: 0px 3px 5px -1px #ccc;
+    }
+
+    .nav-bar-list li .nav-bar-list li {
+      clear: both;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 20px;
+      border-style: none;
+    }
+
+    .nav-bar-list li .nav-bar-list li a:hover {
+      padding-left: 10px;
+      border-left: 2px solid white;
+      transition: all 0.3s ease;
+    }
+  }
 }
+
+a {
+
+    text-decoration: none;
+
+    &:hover {
+        color: white;
+    }
+
+}
+
+ .nav-bar-list li .nav-bar-list li a { transition: all 0.5s ease; }

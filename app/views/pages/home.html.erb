@@ -1,11 +1,19 @@
 <div class="text-center pt-4 banner">
+  <nav role="navigation" class="primary-navigation">
+    <ul class="nav-bar-list">
+      <li class="active"><%= link_to "Home", root_path, class: "nav-link" %></li>
+      <li class="li-w-line"><%= link_to "Projects", projects_path, class: "nav-link" %></li>
+      <li class="li-w-line"><%= link_to "Contact", contact_path, class: "nav-link" %></li>
+    </ul>
+  </nav>
   <div class="row m-4 banner-div">
     <div class="col left-banner">
       <div class="banner-description">
         <h1 class="title">Dust The Developer</h1>
         <br>
         <p>Hello, my name is Dustin and I'm a full-stack web-developer from San Diego, CA currently living in Paris.</p>
-        <%= link_to "Contact Me", contact_path, class: "btn btn-flat" %>
+        <br>
+        <%= link_to "Contact Me", contact_path, class: "btn-flat" %>
       </div>
     </div>
     <div class="col right-banner">
@@ -17,7 +25,7 @@
 <h1>My Specialties</h1>
 </div>
 <div class="skill-container">
-  <ul>
+  <ul class="skill-ball-unordered">
     <li class="skill-ball ball-1 fade-in">
       <%= image_tag("heroku.png", class: "heroku-pic") %>
     </li>

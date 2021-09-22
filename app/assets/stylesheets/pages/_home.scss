@@ -1,6 +1,6 @@
 // Specific CSS for your home-page
-// @import url('https://fonts.googleapis.com');
-// @import url('https://fonts.gstatic.com');
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.gstatic.com');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
@@ -128,7 +128,7 @@ p {
   padding-bottom: 100px;
 }
 
-ul {
+.skill-ball-unordered {
   height: 530px;
   position: relative;
   list-style: none;
@@ -154,11 +154,11 @@ ul {
   color: white;
   padding: 8px 24px;
   border-radius: 4px;
-  background: #1EDD88;
+  background-color: #1EDD88;
   transition: background 0.3s ease;
 }
 
 .btn-flat:hover {
-  background: red;
+  background-color: red;
   color: white;
 }
