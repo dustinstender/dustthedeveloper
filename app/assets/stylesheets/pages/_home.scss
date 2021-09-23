@@ -94,31 +94,35 @@ p {
   border-radius: 50%;
 }
 
+.post-pic {
+  width: 80px;
+}
+
 .ball-1 {
   background-color: #fff;
-  left: 80%;
-  top: 10%
+  left: 70%;
+  top: 3%;
 }
 
 .ball-2 {
-  left: 20%;
+  left: 15%;
   background-color: #CC0202;
 }
 
 .ball-3 {
-  left: 55%;
+  left: 45%;
   top: 20%;
   background-color: #389AD6;
 }
 
 .ball-4 {
   left: 70%;
-  top: 80%;
+  top: 45%;
   background-color: #E44E26;
 }
 
 .ball-5 {
-  right: 80%;
+  left: 10%;
   top: 40%;
 }
 
@@ -129,13 +133,19 @@ p {
 }
 
 .ball-7 {
-  left: 10%;
+  left: 15%;
   top: 90%;
   background-color: #563C7D;
 }
 
+.ball-8 {
+  left: 60%;
+  top: 87%;
+  background-color: #fff;
+}
+
 .skill-container {
-  padding-top: 70px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 

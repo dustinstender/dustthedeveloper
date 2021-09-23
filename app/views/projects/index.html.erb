@@ -1,7 +1,10 @@
 <div class="title-project">
 <h1 >Projects</h1>
-<% @projects.each do |project| %>
-<p><%= project.title %></p>
-<% end %>
-<%= link_to "Contact Me", root_path, class: "btn-flat" %>
+  <% @projects.each do |project| %>
+    <% lowercase = project.title.downcase %>
+    <% img_name = lowercase.gsub(" ", "-") %>
+    <% final_img_name = img_name + ".png" %>
+    <%= image_tag(final_img_name)%>
+    <h3><%= project.title %></h3>
+  <% end %>
 </div>
