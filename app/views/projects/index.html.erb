@@ -13,13 +13,13 @@
       <div class="row">
         <div class="col">
           <% left_div.each do |proj| %>
-          <%= image_tag(lowercase)%>
+          <%= image_tag(lowercase, class: "project")%>
           <h3><%= project.title %></h3>
           <% end %>
         </div>
         <div class="col">
           <% right_div.each do |proj| %>
-          <%= image_tag(lowercase) %>
+          <%= image_tag(lowercase, class: "project") %>
           <h3><%= project.title %></h3>
           <% end %>
         </div>
