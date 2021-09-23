@@ -1,10 +1,29 @@
 <div class="title-project">
 <h1 >Projects</h1>
   <% @projects.each do |project| %>
-    <% lowercase = project.title.downcase %>
-    <% img_name = lowercase.gsub(" ", "-") %>
-    <% final_img_name = img_name + ".png" %>
-    <%= image_tag(final_img_name)%>
-    <h3><%= project.title %></h3>
+    <% lowercase = project.title.downcase.gsub(" ", "-") + ".png" %>
+    <% left_div = [] %>
+    <% right_div = [] %>
+    <% if project.id.odd?  %>
+      <% left_div << project %>
+    <% else %>
+      <% right_div << project %>
+    <% end %>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <% left_div.each do |proj| %>
+          <%= image_tag(lowercase)%>
+          <h3><%= project.title %></h3>
+          <% end %>
+        </div>
+        <div class="col">
+          <% right_div.each do |proj| %>
+          <%= image_tag(lowercase) %>
+          <h3><%= project.title %></h3>
+          <% end %>
+        </div>
+      </div>
+    </div>
   <% end %>
 </div>
