@@ -4,9 +4,28 @@
 }
 
 .project-site {
-  height: 300px ;
+  height: 280px ;
 }
 
 .project-mobile {
-  height: 400px;
+  height: 420px;
+}
+
+.from-left {
+  transform: translateX(-50%)
+}
+
+.from-right {
+  transform: translateX(50%)
+}
+
+.from-left,
+.from-right {
+  transition: transform 400ms ease-in;
+}
+
+.from-left.appear,
+.from-right.appear {
+  transition: transform 400ms ease-in;
+  transform: translateX(0);
 }
