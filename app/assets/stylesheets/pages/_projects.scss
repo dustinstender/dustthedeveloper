@@ -12,11 +12,11 @@
 }
 
 .from-left {
-  transform: translateX(-80%)
+  transform: translateX(-100%)
 }
 
 .from-right {
-  transform: translateX(80%)
+  transform: translateX(50%)
 }
 
 .from-left,
@@ -49,8 +49,17 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   justify-content:center;
+  background-color: #22313F;
 }
 
 .actual-writing {
   padding: 30px 10px;
+}
+
+.project-desp-white {
+  color: white;
+}
+
+h3 {
+  color: white;
 }
