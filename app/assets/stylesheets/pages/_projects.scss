@@ -12,11 +12,11 @@
 }
 
 .from-left {
-  transform: translateX(-50%)
+  transform: translateX(-80%)
 }
 
 .from-right {
-  transform: translateX(50%)
+  transform: translateX(80%)
 }
 
 .from-left,
@@ -28,4 +28,29 @@
 .from-right.appear {
   transition: transform 400ms ease-in;
   transform: translateX(0);
+}
+
+.mobile-div {
+  width: 225px;
+  height: 450px;
+  border-radius: 5px;
+  transform-origin: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background-color: #F4F4F4;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.writing-div {
+  width: 350px;
+  border-radius: 5px;
+  transform-origin: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content:center;
+}
+
+.actual-writing {
+  padding: 30px 10px;
 }

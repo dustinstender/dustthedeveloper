@@ -55,5 +55,44 @@
       </div>
     </div>
   </div>
-
+</div>
+<div class="title-project">
+  <% @projects.each do |project| %>
+    <% lowercase = project.title.downcase.gsub(" ", "-") + ".png" %>
+    <% left_div = [] %>
+    <% right_div = [] %>
+    <% if project.id.odd?  %>
+      <% left_div << project %>
+    <% else %>
+      <% right_div << project %>
+    <% end %>
+    <div class="container">
+          <% left_div.each do |proj| %>
+            <div class="row">
+              <div class="col from-left slide-in">
+                <div class="writing-div">
+                  <div class="actual-writing">
+                    <h3><%= project.title %></h3>
+                    <br>
+                    <p><%= project.description %></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col from-right slide-in">
+                  <%= image_tag(lowercase, class: "project-mobile")%>
+              </div>
+            </div>
+          <% end %>
+          <% right_div.each do |proj| %>
+          <div class="row">
+              <div class="col from-left slide-in">
+                <%= image_tag(lowercase, class: "project-site") %>
+              </div>
+              <div class="col from-right slide-in">
+                <h3><%= project.title %></h3>
+              </div>
+            </div>
+          <% end %>
+    </div>
+  <% end %>
 </div>

@@ -1,5 +1,4 @@
 <div class="title-project">
-<h1 >Projects</h1>
   <% @projects.each do |project| %>
     <% lowercase = project.title.downcase.gsub(" ", "-") + ".png" %>
     <% left_div = [] %>
@@ -9,22 +8,35 @@
     <% else %>
       <% right_div << project %>
     <% end %>
-
     <div class="container">
-      <div class="row">
-        <div class="col from-left slide-in">
           <% left_div.each do |proj| %>
-          <%= image_tag(lowercase, class: "project-mobile")%>
-          <h3><%= project.title %></h3>
+            <div class="row">
+              <div class="col from-left slide-in">
+                <div class="writing-div">
+                  <div class="actual-writing">
+                    <h3><%= project.title %></h3>
+                    <br>
+                    <p><%= project.description %></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col from-right slide-in">
+                <div class="mobile-div">
+                  <%= image_tag(lowercase, class: "project-mobile")%>
+                </div>
+              </div>
+            </div>
           <% end %>
-        </div>
-        <div class="col from-right slide-in">
           <% right_div.each do |proj| %>
-          <%= image_tag(lowercase, class: "project-site") %>
-          <h3><%= project.title %></h3>
+          <div class="row">
+              <div class="col from-left slide-in">
+                <%= image_tag(lowercase, class: "project-site") %>
+              </div>
+              <div class="col from-right slide-in">
+                <h3><%= project.title %></h3>
+              </div>
+            </div>
           <% end %>
-        </div>
-      </div>
     </div>
   <% end %>
 </div>
