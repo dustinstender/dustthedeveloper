@@ -70,33 +70,29 @@
           <% left_div.each do |proj| %>
             <div class="row">
               <div class="col from-left slide-in">
-                <div class="writing-div">
                   <div class="actual-writing">
                     <h3><%= project.title %></h3>
                     <br>
                     <p class="project-desp-white"><%= project.description %></p>
                   </div>
-                </div>
               </div>
               <div class="col from-right slide-in">
                   <%= image_tag(lowercase, class: "project-mobile")%>
               </div>
             </div>
           <% end %>
-          <br><br><br><br>
+          <br><br>
           <% right_div.each do |proj| %>
           <div class="row">
               <div class="col from-left slide-in">
                 <%= image_tag(lowercase, class: "project-site") %>
               </div>
               <div class="col from-right slide-in">
-                <div class="writing-div">
                   <div class="actual-writing">
                     <h3><%= project.title %></h3>
                     <br>
                     <p class="project-desp-white"><%= project.description %></p>
                   </div>
-                </div>
               </div>
             </div>
           <% end %>

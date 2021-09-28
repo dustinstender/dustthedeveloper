@@ -4,19 +4,19 @@
 }
 
 .project-site {
-  height: 280px ;
+  height: 310px ;
 }
 
 .project-mobile {
-  height: 420px;
+  height: 550px;
 }
 
 .from-left {
-  transform: translateX(-100%)
+  transform: translateX(-80%)
 }
 
 .from-right {
-  transform: translateX(50%)
+  transform: translateX(80%)
 }
 
 .from-left,
@@ -43,23 +43,15 @@
 }
 
 .writing-div {
-  width: 350px;
+  width: 400px;
   border-radius: 5px;
   transform-origin: center;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   justify-content:center;
-  background-color: #22313F;
+  background-color: #F4F4F4;
 }
 
 .actual-writing {
   padding: 30px 10px;
-}
-
-.project-desp-white {
-  color: white;
-}
-
-h3 {
-  color: white;
 }

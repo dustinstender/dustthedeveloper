@@ -11,20 +11,15 @@
     <div class="container">
           <% left_div.each do |proj| %>
             <div class="row">
-              <div class="col from-left slide-in">
                 <div class="writing-div">
                   <div class="actual-writing">
                     <h3><%= project.title %></h3>
                     <br>
+                    <%= image_tag(lowercase, class: "project-mobile")%>
+                    <br> <br>
                     <p><%= project.description %></p>
                   </div>
                 </div>
-              </div>
-              <div class="col from-right slide-in">
-                <div class="mobile-div">
-                  <%= image_tag(lowercase, class: "project-mobile")%>
-                </div>
-              </div>
             </div>
           <% end %>
           <% right_div.each do |proj| %>
