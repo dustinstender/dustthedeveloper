@@ -77,7 +77,7 @@
                   </div>
               </div>
               <div class="col from-right slide-in">
-                  <%= image_tag(lowercase, class: "project-mobile")%>
+                  <a href=<%= project.url %> class="nav-link"><%= image_tag(lowercase, class: "project-mobile")%></a>
               </div>
             </div>
           <% end %>
@@ -85,7 +85,7 @@
           <% right_div.each do |proj| %>
           <div class="row">
               <div class="col from-left slide-in">
-                <%= image_tag(lowercase, class: "project-site") %>
+                <a href=<%= project.url %> class="nav-link"><%= image_tag(lowercase, class: "project-site")%></a>
               </div>
               <div class="col from-right slide-in">
                   <div class="actual-writing">
